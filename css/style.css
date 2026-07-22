@@ -8,6 +8,9 @@ body{
     background:#F7F1E6;
     font-family:Tahoma,sans-serif;
 }
+
+/* هدر */
+
 header{
     width:100%;
 }
@@ -16,43 +19,74 @@ header img{
     width:100%;
     display:block;
 }
+
+/* کارت ها */
+
 .cards{
+    width:90%;
+    margin:40px auto;
+
     display:flex;
     justify-content:center;
-    margin:40px 0;
+    align-items:flex-start;
+    gap:35px;
+    flex-wrap:wrap;
 }
 
 .card{
     width:350px;
-    background:white;
+    background:#ffffff;
+
     border-radius:20px;
+
     padding:25px;
+
     text-align:center;
-    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
 }
 
 .card img{
     width:180px;
-    height:auto;
+    height:180px;
+    object-fit:contain;
 }
 
 .card h2{
-    margin:20px 0 10px;
-    font-size:30px;
+    font-size:32px;
+    margin:20px 0 15px;
 }
 
 .card p{
+    font-size:20px;
     color:#555;
     line-height:2;
-    margin-bottom:20px;
+    min-height:90px;
 }
 
 .card button{
     background:#228B22;
     color:white;
+
     border:none;
-    padding:12px 30px;
-    border-radius:30px;
-    cursor:pointer;
+
+    padding:14px 35px;
+
+    border-radius:40px;
+
     font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.card button:hover{
+    background:#196d19;
 }
