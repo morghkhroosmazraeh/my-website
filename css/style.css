@@ -130,11 +130,11 @@ header img{
 
     display:flex;
 
-    justify-content:space-between;
+    justify-content:center;
 
     align-items:flex-start;
 
-    gap:80px;
+    gap:70px;
 
 }
 
@@ -174,7 +174,9 @@ header img{
 
     border-left:4px solid #333;
 
-    padding-left:25px;
+    padding-left:35px;
+
+    margin-left:40px;
 
 }
 
