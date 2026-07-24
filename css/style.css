@@ -31,6 +31,7 @@ header img{width:100%;display:block}
 .card button{background:#228B22;color:#fff;border:none;padding:14px 35px;border-radius:40px;cursor:pointer;font-size:18px;transition:.3s}
 .card button:hover{background:#196d19}
 
+/* بخش درباره ما و تماس */
 .about-contact{width:90%;margin:70px auto;display:flex;justify-content:center;align-items:flex-start;gap:70px}
 .about{flex:1}.about h2{color:#1d7d22;font-size:42px;margin-bottom:25px}.about p{font-size:24px;line-height:2.3;color:#333}
 .contact{width:430px;padding-left:35px;margin-left:40px}
@@ -46,6 +47,171 @@ header img{width:100%;display:block}
 
 footer{background:#195f22;color:#fff;text-align:center;padding:22px;margin-top:70px;font-size:22px}
 
+/* ==========================================
+   استایل‌های اختصاصی صفحه دوم (محصولات)
+   ========================================== */
+.product-page {
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.product-title {
+  text-align: center;
+  font-size: 32px;
+  color: #1d7d22;
+  margin-bottom: 25px;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 28px;
+  color: #1d7d22;
+  margin: 35px 0 15px;
+}
+
+.gallery-container {
+  margin-bottom: 20px;
+}
+
+/* اسلایدر افقی اینستاگرامی */
+.slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.instagram-slider {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 10px 5px 15px;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+.instagram-slider::-webkit-scrollbar {
+  height: 6px;
+}
+.instagram-slider::-webkit-scrollbar-thumb {
+  background: #1d7d22;
+  border-radius: 10px;
+}
+
+.instagram-slider img {
+  flex: 0 0 80%;
+  max-width: 320px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 18px;
+  scroll-snap-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+  background: #fff;
+}
+
+/* دکمه‌های بعدی و قبلی چپ/راست */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(29, 125, 34, 0.85);
+  color: #fff;
+  border: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.slider-btn:hover {
+  background: #196d19;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.prev-btn {
+  right: -18px;
+}
+
+.next-btn {
+  left: -18px;
+}
+
+.slider-hint {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  margin-top: 8px;
+}
+
+/* قیمت زیر عکس مولد */
+.price-box {
+  background: #fff;
+  border: 2px dashed #1d7d22;
+  border-radius: 15px;
+  padding: 15px 30px;
+  text-align: center;
+  width: fit-content;
+  margin: 35px auto 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.price-amount {
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+}
+
+/* باکس توضیحات محصول */
+.product-description {
+  background: #fff;
+  border-radius: 18px;
+  padding: 25px;
+  margin: 30px 0;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.product-description h3 {
+  font-size: 22px;
+  color: #1d7d22;
+  margin-bottom: 12px;
+}
+
+.product-description p {
+  font-size: 18px;
+  line-height: 2;
+  color: #444;
+}
+
+.back-btn-container {
+  text-align: center;
+  margin: 30px 0 20px;
+}
+
+.back-btn {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: #1d7d22;
+}
+
+/* ریسپانسو موبایل و تبلت */
 @media(max-width:992px){
 .cards{flex-direction:column;align-items:center}
 .card{width:95%;max-width:420px}
@@ -68,4 +234,6 @@ footer{background:#195f22;color:#fff;text-align:center;padding:22px;margin-top:7
 .icon{width:46px;height:46px;font-size:20px}
 .ltr,.address{font-size:20px}
 footer{font-size:18px;padding:18px}
+.prev-btn { right: 2px; }
+.next-btn { left: 2px; }
 }
